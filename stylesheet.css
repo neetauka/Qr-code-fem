@@ -1,0 +1,82 @@
+/* variables */
+:root {
+    /*White*/
+    --White: hsl(0, 0%, 100%);
+    /*Light Gray */
+    --Light-Gray: hsl(212, 45%, 89%);
+    /*Grayish blue*/
+    --Grayish-blue: hsl(220, 15%, 55%);
+    /* dark-blue */
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+/* fonts  */
+@font-face {
+    font-family: "Outfit Bold";
+    src: url("font/Outfit-Bold.ttf");
+}
+@font-face{
+    font-family: "Outfit";
+    src: url("font/Outfit-Regular.ttf");
+}
+/* resets-- this is for default setting of html documents */
+body {
+    overflow: hidden;
+    background-color:var(--Light-Gray);
+    /* min-height: 100vh; */
+    /* padding: 0 25px; */
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card{
+    width:90vw;
+    max-width: 620px;
+    background-color: var(--White);
+    /* height:100px; */
+    box-sizing: border-box;
+    padding:15px;
+    border:none;
+    border-radius: 20px;;
+}
+img{
+    width:100%;
+    border-radius:10px;
+}
+h1 {
+    font-family: "Outfit Bold";
+    /* font-size: 1.35em; */
+    text-align: center;
+    color:var(--Dark-blue)
+}
+
+p {
+    font-family: "Outfit";
+    text-align: center;
+    font-size: 1.09em;
+    color:var(--Grayish-blue);
+    
+}
+section{
+   margin-bottom:10px; 
+   height:150px;
+}
+
+@media screen and (min-width:579px){
+    .container .card{
+        max-width: 320px;
+       
+    }
+    p {
+        font-family: "Outfit";
+        text-align: center;
+        font-size: 1.1em;
+        color:var(--Grayish-blue);
+        
+    }
+    
+}
